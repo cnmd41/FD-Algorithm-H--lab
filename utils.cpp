@@ -58,7 +58,7 @@ void merge(vector<tiiib>& arr, int left, int mid, int right) {
     while (j < n2) arr[k++] = right_arr[j++];
 }
 
-vector<tiib> find_segments(const string& query, const unordered_map<string, pib>& myhash) {
+vector<tiib> find_segments(string query, unordered_map<string, pib> myhash) {
     int len = query.size();
     vector<int> dp(len + 1, len + 1);
     dp[len] = 0;
@@ -103,6 +103,6 @@ vector<tiib> find_segments(const string& query, const unordered_map<string, pib>
     return segments;
 }
 
-void print(const vector<tiiib>& results) {
+void print(vector<tiiib> results) {
     for (const auto& ans : results) cout << "Pos: " << g0(ans) << ", Len: " << g1(ans) << ", Cnt: " << g2(ans)  << ", Isreverse: " << (g3(ans) ? "True" : "False") << endl;
 }

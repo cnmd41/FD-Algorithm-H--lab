@@ -31,7 +31,7 @@ unordered_map<string, pib> build_hash(string seq);
 bool compare_tuples(const tiiib& a, const tiiib& b);
 void merge_sort(vector<tiiib>& arr, int left, int right);
 void merge(vector<tiiib>& arr, int left, int mid, int right);
-vector<tiib> find_segments(const string& query, const unordered_map<string, pib>& hash_table);
-void print(const vector<tiiib>& results);
+vector<tiib> find_segments(string query, unordered_map<string, pib> hash_table);
+void print(vector<tiiib> results);
 
 #endif
